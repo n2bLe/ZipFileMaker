@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zipfilemaker.ZipFileController">
+   <children>
+      <Button fx:id="addBtn" layoutX="170.0" layoutY="395.0" mnemonicParsing="false" onAction="#addFile" text="Add File" />
+      <Button layoutX="244.0" layoutY="395.0" mnemonicParsing="false" onAction="#zip" prefHeight="25.0" prefWidth="60.0" text="Zip" />
+      <ListView fx:id="listView" layoutX="15.0" layoutY="31.0" prefHeight="301.0" prefWidth="298.0" />
+      <Button layoutX="102.0" layoutY="395.0" mnemonicParsing="false" onAction="#deleteFile" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+      <Label layoutX="15.0" layoutY="6.0" prefHeight="17.0" prefWidth="35.0" text="Files :" />
+      <Button layoutX="21.0" layoutY="395.0" mnemonicParsing="false" onAction="#downloadAndZip" text="Donwload" />
+      <TextField fx:id="urlField" layoutX="15.0" layoutY="352.0" prefHeight="25.0" prefWidth="173.0" />
+      <Label layoutX="14.0" layoutY="332.0" prefHeight="17.0" prefWidth="35.0" text="URL :" />
+      <Label layoutX="200.0" layoutY="332.0" text="File name :" />
+      <TextField layoutX="196.0" layoutY="352.0" prefHeight="25.0" prefWidth="118.0" />
+   </children>
+</AnchorPane>
